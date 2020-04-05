@@ -69,8 +69,17 @@ class TicTacToe
   end
 
   def full?
-    @board.all? do |square| square != " " 
+    @board.all? do |square| square != " "
     end
+  end
+
+  def draw?
+    xcou = @board.count do |x| x = "X"
+    end
+    ycou = @board.count do |y| y = "Y"
+    end
+    if xcou == ycou
+      true
   end
 
 
