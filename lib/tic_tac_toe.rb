@@ -80,6 +80,7 @@ class TicTacToe
     end
     if xcou == ycou
       true
+    end
   end
 
 
