@@ -74,13 +74,7 @@ class TicTacToe
   end
 
   def draw?
-    xcou = @board.count do |x| x = "X"
-    end
-    ycou = @board.count do |y| y = "Y"
-    end
-    if xcou == ycou
-      true
-    end
+    full? && !won?
   end
 
 
