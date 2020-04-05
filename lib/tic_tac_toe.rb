@@ -81,6 +81,12 @@ class TicTacToe
     draw? || won? 
   end
 
+  def winner
+    if won? == true 
+      current_player
+    end
+  end
+
 
 
 
