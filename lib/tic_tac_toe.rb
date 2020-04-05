@@ -60,6 +60,14 @@ class TicTacToe
     display_board
   end
 
+  def won?
+    WIN_COMBINATIONS.any? |combo|
+    if @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
+      true
+    else false
+    end
+  end
+
 
 
 
